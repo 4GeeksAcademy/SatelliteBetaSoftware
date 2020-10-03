@@ -1,5 +1,7 @@
 import React from "react";
 import teamImage from "../../img/snap.png";
+import cubeImg from "../../img/cube.png";
+import satellitesImg from "../../img/satellites-orbiting.jpg";
 import { Link } from "react-router-dom";
 import { Plans } from "./plans";
 import { Context } from "../store/appContext";
@@ -22,10 +24,7 @@ export class Home extends React.Component {
 								<span className="alii">{"/>"}</span>
 							</h1>
 
-							<img
-								className="raspimg"
-								src={"https://i.pinimg.com/originals/e0/4b/36/e04b36d9ae2dce5cef8cc9698ba9abea.png"}
-							/>
+							<img className="raspimg" src={cubeImg} />
 
 							<div className="starysky">
 								<div id="stars" />
@@ -56,10 +55,7 @@ export class Home extends React.Component {
 					<div className="row first-section">
 						<div className="col">
 							<Fade left>
-								<img
-									className="orbitlogo"
-									src="https://www.trzcacak.rs/myfile/full/251-2510350_satellites-space-orbit-orbiting-telecommunication-world-map.png"
-								/>
+								<img className="orbitlogo" src={satellitesImg} />
 							</Fade>
 						</div>
 						<div className="col mission-p">

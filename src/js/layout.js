@@ -24,15 +24,14 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Navbar />
 						<Switch>
-							<Route path="/" component={Home} />
-							<Route path="/profile" component={Profile} />
-							<Route path="/home" component={Home} />
-							<Route path="/subscribe" component={Plans} />
-							<Route path="/login" component={Login} />
+							<Route exact path="/" component={Home} />
+							<Route exact path="/profile" component={Profile} />
+							<Route exact path="/home" component={Home} />
+							<Route exact path="/subscribe" component={Plans} />
+							<Route exact path="/login" component={Login} />
 
-							<Route path="/signup" component={Signup} />
-							<Route path="/plan/:planName/:planId" component={SinglePlanPage} />
-							<Route render={() => <h1>Not found!</h1>} />
+							<Route exact path="/signup" component={Signup} />
+							<Route exact path="/plan/:planName/:planId" component={SinglePlanPage} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 					</ScrollToTop>
